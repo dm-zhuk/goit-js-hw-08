@@ -36,3 +36,5 @@ if (savedTime) {
       });
   });
 }
+
+console.log(savedTime);
