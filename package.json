@@ -9,12 +9,16 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.0.5",
-    "glob": "^8.1.0"
+    "glob": "^8.1.0",
+    "vite": "^4.0.5"
   },
   "author": "Dmytro Zhuk <dm.zhuk@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "@vimeo/player": "^2.21.0",
+    "lodash.throttle": "^4.1.1",
+    "modern-normalize": "^2.0.0",
+    "simplelightbox": "^2.14.2",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }
