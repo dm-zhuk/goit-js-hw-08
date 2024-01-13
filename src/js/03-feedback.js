@@ -10,7 +10,6 @@ const saveFormState = () => {
     email: emailInput.value,
     message: messageInput.value,
   };
-
   localStorage.setItem('feedback-form-state', JSON.stringify(formState));
 };
 
@@ -43,9 +42,13 @@ const handlerSubmit = event => {
     message: messageInput.value,
   };
 
-  console.log(formState);
-
-  clearFormState();
+  // Add a check in the `handlerSubmit` function to make the form submit only when both fields are filled
+  if (formState.email && formState.message) {
+    console.log(formState);
+    clearFormState();
+  } else {
+    alert('Fill in both fields before submit, please');
+  }
 };
 
 // Listen for "input" event and save form state using throttle to limit the frequency of updates
